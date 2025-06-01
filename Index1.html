@@ -1,0 +1,974 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRO DE SALUD SANTA CRUZ TEPEXPAN</title>
+    
+    <link rel="stylesheet" type="text/css" href="formatoo.css"/>
+    <style type="text/css">
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+        }
+
+        .cuadro, .texto, .texto-sin-fondo {
+            background: #DCB698;
+            padding: 10px;
+            border-radius: 20px;
+            margin: 10px;
+            max-width: 400px; 
+            flex: 1 1 400px;
+            flex-direction: column;
+            align-items: center; 
+        }
+        
+         .cuadro1, .texto, .texto-sin-fondo {
+            background: #DCB698;
+            padding: 10px;
+            margin: 10px;
+            max-width: 400px; 
+            flex: 1 1 400px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        .cuadro img {
+            width: 100%;
+            height: auto; 
+            border-radius: 10px;
+        }
+
+        .texto {
+            background-color: #E5D176;
+            color: green;
+            font-style: oblique;
+            font-weight: bold;
+            text-align: center; 
+        }
+        
+         #tex2 {
+            background-color: #E5D176;
+            color: green;
+            font-style: oblique;
+            font-weight: bold;
+            text-align: center; 
+        }
+        
+        #texto2{
+            top:50px;
+            background-color: #E5D176;
+            color: green;
+            font-style: oblique;
+            font-weight: bold;
+            text-align: center;
+             border: 10px solid pink;
+    border-style: dotted;
+            
+                
+            }
+
+        .texto-sin-fondo {
+            background: none; 
+            color: #2C3E50; 
+            font-family: 'Courier New', Courier, monospace; 
+            text-align: center; 
+        }
+
+       
+
+        th, td {
+            border: 1px solid #4CAF50;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        section1{
+background-color:#CBDBA7;
+margin-top: 250; 
+     font-family:inherit;
+}
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+        }
+        
+        
+#CUADRO1 {
+POSITION: ABSOLUTE;
+LEFT: 1010PX;
+TOP: 30PX;
+WIDTH: 79PX;
+HEIGHT: 44PX;
+}
+#CUADRO2 {
+POSITION: ABSOLUTE;
+LEFT: 910PX;
+TOP: 30PX;
+WIDTH: 9PX;
+HEIGHT: 44PX;
+}
+#CUADRO3 {
+POSITION: ABSOLUTE;
+LEFT: 820PX;
+TOP: 30PX;
+WIDTH: 79PX;
+HEIGHT: 44PX;
+}
+#CUADRO4 {
+POSITION: ABSOLUTE;
+LEFT: 570PX;
+TOP: 70PX;
+WIDTH: 236PX;
+HEIGHT: 64PX;
+background: #DCB698;
+}
+
+
+#CUADRO5 {
+POSITION: ABSOLUTE;
+LEFT: 770PX;
+TOP: 200PX;
+WIDTH: 236PX;
+HEIGHT: 64PX;
+background: #DCB698;
+}
+    
+        
+         .imagen-container {
+            margin: 10px 0;
+            text-align: center; 
+        }
+        
+        article{
+            background-color: aqua;
+        }
+        #logo-esquina {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 70px;
+  height: auto;
+  z-index: 1000;
+}
+
+#contenedor {
+      width: 420px;
+      height: auto;
+      border: 5px solid #000;
+                  border-radius: 20px;
+      position: absolute;
+      top: 380px;
+      left: 820px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contenedor img {
+                  border-radius: 20px;
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+
+    #contenedor2 {
+      width: 320px;
+      height: auto;
+      border: 5px solid #4906e4;
+              border-radius: 20px;
+
+      position: absolute;
+      top: 1500px;
+      left: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contenedor2 img {
+                  border-radius: 20px;
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+     #contenedor3 {
+      width: 320px;
+      height: 250px;
+      border: 5px solid #4906e4;
+      border-radius: 20px;
+      position: absolute;
+      top: 1500px;
+      left:920px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contenedor3 img {
+                  border-radius: 20px;
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
+
+    body.dark {
+      background: #111;
+    }
+
+
+
+    
+     #contenedor4 {
+      width: auto;
+      height: auto;
+      border: 5px solid #4906e4;
+      border-radius: 20px;
+      position: absolute;
+      top: 4500px;
+      left:20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contenedor4 img {
+                  border-radius: 10px;
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
+
+    body.dark {
+      background: #111;
+    }
+
+     #contenedor5 {
+      width: auto;
+      height: auto;
+      border: 5px solid #4906e4;
+      border-radius: 20px;
+      position: absolute;
+      top: 4500px;
+      left:475px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contenedor5 img {
+                  border-radius: 10px;
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
+
+    body.dark {
+      background: #111;
+    }
+
+     #contenedor6 {
+      width: auto;
+      height: auto;
+      border: 5px solid #4906e4;
+      border-radius: 20px;
+      position: absolute;
+      top: 4500px;
+      left:900px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    #contenedor6 img {
+                  border-radius: 10px;
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    
+
+    body.dark {
+      background: #111;
+    }
+
+
+      section{
+            background-color: rgba(241, 238, 10, 0.384);
+        }
+
+
+
+        
+        
+    </style>
+</head>
+
+<body id="preview">
+<header>
+<RIGHT><h1>CENTRO DE SALUD SANTA CRUZ TEPEXPAN</h1>
+<h1>"TU BIENESTAR A UN PASO"</h1>
+</RIGHT>
+<DIV ID="CUADRO1">
+<img src="gobierno.png" WIDTH="300" HEIGTH ="200"/>
+</DIV>
+<DIV ID="CUADRO2">
+<IMG SRC="imss.png" WIDTH="78" HEIGTH ="10"/>
+</DIV>
+<DIV ID="CUADRO3">
+<IMG SRC="cecy.jpg" WIDTH="70" HEIGTH ="10"/>
+</DIV>
+<DIV ID="CUADRO4">
+<IMG SRC="jiqui.png" WIDTH="250" HEIGTH ="50"/>
+</DIV>
+<hr>
+</header>
+
+
+    <br>
+
+<righ>
+<form action="#" method="get">
+    <input type="text" name="search" placeholder="Busca aquí..." style="width: 300px; height: 30px;">
+    <button type="submit" style="height: 30px;">Buscar</button>
+</form>
+</righ> 
+    
+        <br><br>
+
+
+<center>
+    <nav>
+        <a href="Inicio.html">BIENVENIDOS </a>
+          <a href="historia.html"> HISTORIA</a>
+             <a href="atencionme.html">ATENCIÓN MEDICA </a>
+          <a href="dear.html">AGENDAR CITA </a>
+          <a href="dear.html"> ¿SABIAS QUÉ?</a>
+          <a href="avengers.html"> PERSONAJES</a> 
+        
+    </nav>
+
+
+    
+
+    <script language="JavaScript">
+  // Pedir confirmación para visitar una página
+
+  function confirmar() {
+    return confirm("Esta página contiene información para mayores de 18 años. ¿Tienes más de 18 años?");
+  }
+</script>
+    
+    <script>
+function mostrarAviso(event) {
+    event.preventDefault();
+    alert("Este contenido es de uso público.");
+    window.location.href = "historia.html";
+}
+document.querySelector('a[href="historia.html"]').addEventListener('click', mostrarAviso);
+</script>
+    
+    
+    
+    <center>
+    <h1>BIENVENIDO</h1>
+</center>
+    
+</center>
+    
+    
+    
+
+     <aside style=" left: 20px; top: 340px; width: 300px; color: #4F4F4F;">
+    <h3>Preguntas frecuentes</h3>
+    <ul>
+        <li><a href="#ubi">¿En dónde está ubicado?</a></li>
+        <li><a href="#tab">Tabla de servicios</a></li>
+        <li><a href="#funda">¿Cuándo se fundó el centro de salud?</a></li>
+        <li><a href="#fin">¿Cómo se financia el centro de salud y ha cambiado su modelo financiero con el tiempo?</a></li>
+        <li><a href="#desa">¿Qué desafíos ha enfrentado el centro de salud desde que fue fundado?</a></li>
+                <li><a href="#vid">video informativo</a></li>
+
+    </ul>
+</aside>
+
+<div id="contenedor">
+  <img id="imagen" src="bien1.png" alt="Imagen original">
+</div>
+
+<script>
+  
+
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+  });
+
+  // Cambiar imagen al pasar el puntero
+  const imagen = document.getElementById("imagen");
+  const imagenOriginal = "C2.png";
+  const imagenHover = "C1.png";
+
+  imagen.addEventListener("mouseover", () => {
+    imagen.src = imagenHover;
+  });
+
+  imagen.addEventListener("mouseout", () => {
+    imagen.src = imagenOriginal;
+  });
+</script>
+
+<br><br><br><br><br><br><br><br>
+
+<br>
+<br>
+<marquee style="font-size: 34px; color: rgb(179, 17, 194); font-weight: bold;">BIENVENIDO</marquee>
+<br><br><br><br><br><br>
+
+
+
+<div class="container">
+    <div class="cuadro" style=" Algerian; box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.5);">
+        <img src="centro-salud.png" alt="Centro de Salud">
+    </div>
+
+
+
+
+    <div id="texto2">
+        <h3 style="color: red;">Bienvenidos</h3>
+        <p>¡Bienvenido al Centro de Salud de Santa Cruz Tetexpan, Jiquipilco! Nos comprometemos a brindar atención médica de calidad, con profesionalismo y calidez, para el bienestar de nuestra comunidad.</p>
+        <p>En nuestro centro, trabajamos con un equipo multidisciplinario para atender las necesidades de salud de todos los habitantes de la región. Nuestro objetivo es promover un estilo de vida saludable y garantizar el acceso a servicios médicos de calidad.</p>
+         <a href="https://www.imssbienestar.gob.mx/" onclick="return confirmar()"> PARA MAS INFORMACION VISITA ESTA PAGINA </a>
+
+    </div>
+
+
+ 
+    <div id="contenedor2">
+<img src="cen1.png" alt="" onmouseover="ejemplo();"
+onmouseout="ejemplo2();" id="i">
+</div>
+
+<script>
+function ejemplo() {
+document.getElementById('i').setAttribute('src','cen3.png');
+}
+function ejemplo2() {
+document.getElementById('i').setAttribute('src','cen1.png');
+}
+</script>
+
+
+
+
+   <div id="contenedor3">
+<img src="ubicacion2.png">
+</div>
+
+
+   <div id="contenedor4">
+<img src="IM1.png">
+</div>
+
+
+   <div id="contenedor5">
+<img src="IM2.png">
+</div>
+
+
+   <div id="contenedor6">
+<img src="IM3.png">
+</div>
+
+
+
+
+
+
+    
+
+   <div class="texto-sin-fondo">
+    <h4 id="ubi"></h4>
+       
+        <h3>Ubicación</h3>
+
+    <ol>
+        <li>
+            Nos encontramos en 004, 50830 Manzana Tercera de Santa Cruz Tepexpan, Jiquipilco, Estado de México.
+        </li>
+        <li>
+            Nuestra ubicación es estratégica, permitiendo fácil acceso a los residentes de las comunidades cercanas.
+        </li>
+        <li>
+            Contamos con instalaciones adecuadas y accesibles para todos los pacientes.
+        </li>
+        <p>
+            <a href="https://www.google.com/maps/place/IMSS+Bienestar+-+Centro+de+Salud+Santa+Cruz+Tepexpan/@19.5695189,-99.7060962,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x85d26f000bfad4df:0x350b6febc76cccdb!2s004,+50830+Manzana+Tercera+de+Santa+Cruz+Tepexpan,+M%C3%A9x.!2m2!1d-99.7035212!2d19.5694768!3m5!1s0x85d26f000bfad4df:0x350b6febc76cccdb!8m2!3d19.5695139!4d-99.7035213!16s%2Fg%2F11vrdvfw31?entry=ttu&g_ep=EgoyMDI1MDQyMC4wIKXMDSoASAFQAw%3D%3D">Da click aqui para ver la ubicacion.</a>
+            
+        </p>
+    </ol>
+</div>
+</div>
+
+
+ 
+
+
+  
+<br><br><br>
+
+
+<button onclick="mensaje();">Hacer Click :)</button>
+<script>
+  function mensaje() {
+    alert("Hiciste click gracias vor visitarnos!");
+  }
+</script>
+
+
+<center>
+    
+<table border="1" cellspacing="0" cellpadding="8">
+  <h4 id="tab">Servicios de Salud</h4>
+
+  <tr>
+    <th style="background-color: #f8c291;">Servicio</th>
+    <th style="background-color: #f6e58d;">Descripción</th>
+  </tr>
+  <tr>
+    <td style="background-color: #dff9fb;">Consulta médica general</td>
+    <td style="background-color: #c7ecee;">Atención para enfermedades comunes, prevención y promoción de la salud.</td>
+  </tr>
+  <tr>
+    <td style="background-color: #fab1a0;">Servicios de vacunación</td>
+    <td style="background-color: #ffeaa7;">Para niños, adultos y adultos mayores, siguiendo las normativas nacionales de salud.</td>
+  </tr>
+  <tr>
+    <td style="background-color: #81ecec;">Atención prenatal y materno-infantil</td>
+    <td style="background-color: #74b9ff;">Servicios especializados para el cuidado de mujeres embarazadas y recién nacidos.</td>
+  </tr>
+  <tr>
+    <td style="background-color: #a29bfe;">Programas de salud mental</td>
+    <td style="background-color: #dfe6e9;">Atención psicológica y psiquiátrica para la comunidad, promoviendo el bienestar emocional.</td>
+  </tr>
+  <tr>
+    <td style="background-color: #e17055;">Charlas de prevención</td>
+    <td style="background-color: #fdcb6e;">Sesiones informativas sobre prevención de enfermedades y promoción de la salud.</td>
+  </tr>
+</table>
+    </center>
+
+<br><br><br>
+
+
+<div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; padding: 40px;">
+  <!-- Columna de texto -->
+  <div style="flex: 1; max-width: 600px;">
+    <h3 style="text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 18px; color: #333;">
+      <span style="display: inline-block; width: 12px; height: 12px; background-color: #b19759; margin-right: 10px;"></span>
+      PROCESO PARA RECIBIR <strong>ATENCIÓN MÉDICA</strong>
+    </h3>
+
+    <div style="margin-top: 30px;">
+      <p style="font-size: 24px; font-weight: bold; color: #ff0202;">01.</p>
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">
+        Primeramente, deberás acudir al centro de salud IMSS-BIENESTAR más cercano a tu domicilio,
+        donde personal médico evaluará tu estado de salud y en caso de ser necesario,
+        te referirá a un establecimiento de segundo nivel de atención, es decir, a un hospital.
+      </p>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <p style="font-size: 24px; font-weight: bold; color: #ff0000;">02.</p>
+      <p style="font-size: 16px; line-height: 1.6; color: #333;">
+        En el hospital se te brindará la atención médica que requieras y en caso de que tu padecimiento así lo amerite,
+        serás referido al tercer nivel de atención para que las y los especialistas den seguimiento médico a tu caso.
+      </p>
+    </div>
+  </div>
+
+  <!-- Columna de imagen -->
+  <div style="flex: 1; text-align: center;">
+    <img src="atencion1.png" alt="Consulta médica" style="width: 100%; max-width: 500px; border-radius: 10px;">
+  </div>
+</div>
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <article>
+
+    <div class="cuadro" style=" Algerian; box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.5);">
+        <img src="Centr.png" alt="Foto del Centro">
+    </div>
+
+    <div class="text2" >
+         <P> <h4 id="funda"></h4></P>
+        <h3>¿Cuándo se fundó el centro de salud?</h3>
+        
+    <font color="purple"><i>
+       
+        El Centro de Salud Santa Cruz Tepexpan fue fundado en el año 1995 como parte de una iniciativa para mejorar el acceso a la atención médica en comunidades rurales del Estado de México. </i> </font>
+        <p>Desde entonces, hemos estado comprometidos con la salud de nuestra comunidad, adaptándonos a sus necesidades cambiantes y trabajando en colaboración con otras instituciones de salud.</p>
+    </div>
+                <div class="container">
+
+
+    <div class="cuadro1" style=" Algerian; box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.5);">
+        <img src="Centr2.png" alt="Centro de Salud">
+    </div>
+
+    <div class="texto-sin-fondo" style=" Algerian; box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.5);">
+         <P> <h4 id="fin"></h4></P>
+        <h3>¿Cómo se financia el centro de salud?</h3>
+        <p>El centro se financia principalmente a través de fondos gubernamentales y subsidios estatales, además de donaciones de organizaciones no gubernamentales y la comunidad.</p>
+        <p>Este financiamiento nos permite ofrecer servicios médicos accesibles y de calidad, así como realizar mejoras en nuestras instalaciones y equipamiento.</p>
+    </div>
+                </div>
+
+        </article>
+
+    
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<div class="container" >
+    <div class="cuadro1" style=" Algerian; box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.5);">
+        <img src="foto5.png" alt="IMSS">
+    </div>
+
+    <div class="texto" style=" Algerian; box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.5);">
+         <P> <h4 id="desa"></h4></P>
+         <P aling="center"><font face="Bierstadt" font size="+1" font color="GREY">  </font>  </P> 
+        <h3>¿Qué desafíos ha enfrentado el centro de salud?</h3>
+        <p>Desde su fundación, el centro ha enfrentado desafíos como la falta de personal médico y escasez de medicamentos. Sin embargo, hemos trabajado arduamente para superar estos obstáculos mediante la capacitación continua de nuestro personal y el establecimiento de alianzas con otras instituciones.</p>
+        <p>Además, estamos comprometidos con la modernización de nuestras instalaciones para ofrecer un mejor servicio a nuestros pacientes.</p>
+    </div>
+</div>
+    
+
+
+<br> <br> <br>
+    
+
+<a href="#top"><img src="boton.jpeg.jpg" id="logo-esquina" alt="Subir al inicio"></a>
+
+
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<section>
+
+<div style="display: flex; align-items: flex-start; gap: 40px; margin: 30px;">
+  <!-- Formulario alineado a la izquierda -->
+  <div style="flex: 1; max-width: 400px;">
+    <h2>Calcula tu Índice de Masa Corporal (IMC)</h2>
+    <form id="imcForm">
+      <label for="peso">Peso (kg):</label><br>
+      <input type="number" id="peso" required><br><br>
+
+      <label for="altura">Altura (m):</label><br>
+      <input type="number" step="0.01" id="altura" required><br><br>
+
+      <button type="submit">Calcular IMC</button><br><br>
+
+      <label for="resultado">Resultado:</label><br>
+      <input type="text" id="resultado" readonly>
+    </form>
+  </div>
+
+  <!-- Imagen a la derecha del formulario -->
+  <div id="imagenContainer" style="display:none; text-align: center;">
+    <h3>¡Atención a tu salud!</h3>
+    <img src="noG2.png" alt="Recomendación de salud" width="300">
+  </div>
+</div>
+
+<script>
+  document.getElementById('imcForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const peso = parseFloat(document.getElementById('peso').value);
+    const altura = parseFloat(document.getElementById('altura').value);
+    const resultado = document.getElementById('resultado');
+    const imagenContainer = document.getElementById('imagenContainer');
+
+    if (peso > 0 && altura > 0) {
+      const imc = peso / (altura * altura);
+      let mensaje = `IMC: ${imc.toFixed(2)} - `;
+
+      if (imc < 18.5) {
+        mensaje += "Bajo peso";
+        imagenContainer.style.display = "none";
+      } else if (imc < 24.9) {
+        mensaje += "Normal";
+        imagenContainer.style.display = "none";
+      } else if (imc < 29.9) {
+        mensaje += "Sobrepeso";
+        imagenContainer.style.display = "none";
+      } else {
+        mensaje += "Obesidad";
+        imagenContainer.style.display = "block";
+      }
+
+      resultado.value = mensaje;
+    } else {
+      resultado.value = "Valores inválidos";
+      imagenContainer.style.display = "none";
+    }
+  });
+</script>
+
+
+
+
+  <center>
+    <h2>Calculadora de Gastos Médicos</h2>
+    <form onsubmit="evaluarGastos(); return false;">
+        <label>Ingrese el total de gastos en salud ($):
+            <input type="number" id="gastos" required>
+        </label><br><br>
+
+        <button type="submit">Evaluar</button><br><br>
+
+        <label>Resultado:
+            <input type="text" id="resultado" readonly>
+        </label><br><br>
+
+        <p id="mensaje" style="font-weight: bold;"></p>
+    </form>
+
+    <script>
+        function evaluarGastos() {
+            let gastos = parseFloat(document.getElementById('gastos').value);
+            let resultado = document.getElementById('resultado');
+            let mensaje = document.getElementById('mensaje');
+
+            resultado.value = "$" + gastos.toFixed(2);
+
+            if (gastos > 1500) {
+                mensaje.style.color = "red";
+                mensaje.textContent = "Evita gastar demasiado dinero, la salud es importante pero no todo es dinero, ten buenos habitos";
+            } else {
+                mensaje.style.color = "green";
+                mensaje.textContent = "Sus gastos están dentro del rango saludable. ¡Siga cuidando su salud!";
+            }
+        }
+    </script>
+</center>
+</section>
+
+
+   
+
+
+
+<br> <br> <br>
+<br> <br> <br>
+
+
+<p>Selecciona un servicio:</p>
+
+<select id="Sels" onchange="mostrarInformacionServicio()">
+  <option value="">-- Selecciona --</option>
+  <option value="vacuna">Vacuna</option>
+  <option value="consulta general">Consulta General</option>
+  <option value="dentista">Dentista</option>
+  <option value="medicina general">Medicina General</option>
+</select>
+
+<p id="pf" style="margin-top: 15px;"></p>
+
+<script>
+  function mostrarInformacionServicio() {
+    var servicio = document.getElementById("Sels").value;
+    var info = "";
+
+    switch (servicio) {
+      case "vacuna":
+        info = "<strong>Vacuna:</strong> Servicio de vacunación para prevenir enfermedades como influenza, tétanos, hepatitis, entre otras.";
+        break;
+      case "consulta general":
+        info = "<strong>Consulta General:</strong> Atención médica básica para diagnóstico y tratamiento de malestares comunes.";
+        break;
+      case "dentista":
+        info = "<strong>Dentista:</strong> Revisión, limpieza dental, tratamiento de caries, extracciones y más.";
+        break;
+      case "medicina general":
+        info = "<strong>Medicina General:</strong> Evaluación integral de la salud, control de enfermedades crónicas y orientación médica.";
+        break;
+      default:
+        info = "";
+    }
+
+    document.getElementById("pf").innerHTML = info;
+  }
+</script>
+
+
+  <div class="imagen-container"  >
+               <P> <h4 id="vid"></h4></P>
+
+    <h3 style="color: darkblue;">Video Informativo</h3>
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+</div>
+
+
+
+
+<article style="text-align: center; padding: 20px; border-radius: 20px; background-color: rgb(142, 136, 51);">
+  <h1>¿Te gusta lo que ves?</h1>
+
+  <input type="text" id="inputComentario" placeholder="Escribe tu opinión..." 
+         style="padding: 10px; width: 300px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
+
+  <br><br>
+  <button onclick="mostrarAlerta()" 
+          style="padding: 10px 20px; font-size: 16px; border-radius: 5px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+    Enviar comentario
+  </button>
+
+  <script>
+    function mostrarAlerta() {
+      const comentario = document.getElementById("inputComentario").value.trim();
+
+      if (comentario !== "") {
+        alert("¡Comentario enviado!");
+      } else {
+        alert("Por favor, escribe un comentario antes de enviar.");
+      }
+    }
+  </script>
+</article>
+
+
+<script>
+  function mostrarTexto() {
+    const input = document.getElementById('inputComentario');
+    document.getElementById('rf').innerText = input.value;
+  }
+
+  function enviarCorreo() {
+    const comentario = document.getElementById('inputComentario').value;
+    const correoDestino = "iaml080407hmcgrna5@soycecytem.mx";
+
+    const asunto = "Comentario desde la página del Centro de Salud";
+    const cuerpo = encodeURIComponent("Comentario del usuario:\n\n" + comentario);
+
+    window.location.href = `mailto:${correoDestino}?subject=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+  }
+</script>
+
+
+    <br><br><br><br>
+
+<footer style="display: flex; justify-content: space-between; align-items: center; background-color: #f0f0f0; padding: 10px 20px; font-size: 12px; border-top: 1px solid #ccc; height: 120px; box-sizing: border-box;">
+
+    <!-- Columna izquierda -->
+    <div style="text-align: left;">
+        <strong>Contacto:</strong><br>
+        Av. Víctor Sánchez, Ranchería Manzana Tercera<br>
+        Santa Cruz Tepexpan, Edo. Méx.<br>
+        WhatsApp: 7121421906
+    </div>
+
+    <!-- Columna centro -->
+    <div style="text-align: center;">
+        <h3 style="margin: 5px 0;">¡Gracias por visitarnos!</h3>
+        <a href="mailto:alvamdjhfhhf@gmail.com" style="color: #007d00; text-decoration: none; font-weight: bold;">Contáctanos por correo</a><br>
+        <span style="color: #666;">Esperamos verte pronto.</span>
+    </div>
+<ul>Equipo:
+		<li>Leonardo Ignacio</li>
+		<li>Ximena Jacinto</li>
+		<li>Johana Lizbeth</li>
+		<li><li>Uziel Emannuel</li>
+		<li>Fatima Lizeth</li>
+		<li>Mayra Paola</li>
+		</ul>
+    <!-- Columna derecha -->
+    <div style="text-align: right;">
+		
+        <img src="code.jpeg" alt="Código QR" width="100" height="60" style="border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+</footer>
+
+
+    
+
+</body>
+
+<script>
+function ejemplo() {
+document.getElementById('i').setAttribute('src','carro2.png');
+}
+</script>
+
+<script>
+  function mensaje() {
+    alert("Gracias por visitar nuestro sitio web!");
+  }
+</script>
+</html>
